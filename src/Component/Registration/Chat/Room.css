@@ -1,0 +1,106 @@
+/* Stylizacja kontenera */
+.room-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e7ff); /* Białe i niebieskie gradientowe tło */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Stylizacja formularza */
+  .room-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Stylizacja etykiety */
+  .room-label {
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  /* Stylizacja pola tekstowego */
+  .room-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .room-input:focus {
+    border: 1px solid #4d90fe; /* Niebieski kolor ramki po najechaniu */
+  }
+  
+  /* Stylizacja przycisku */
+  .room-button {
+    background-color: #4d90fe; /* Niebieski kolor przycisku */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  .room-button:hover {
+    background-color: #357ae8; /* Ciemniejszy niebieski po najechaniu */
+  }
+  
+  /* Responsiveness for tablets and smaller screens */
+@media (max-width: 768px) {
+  .room-container {
+    padding: 20px; /* Add padding for smaller devices */
+  }
+
+  .room-form {
+    width: 100%; /* Adjust form width to fit screen */
+    max-width: 360px; /* Set a maximum width */
+    padding: 30px; /* Slightly reduce padding */
+  }
+
+  .room-label {
+    font-size: 16px; /* Reduce label font size */
+  }
+
+  .room-input {
+    font-size: 14px; /* Adjust input font size */
+    padding: 8px; /* Reduce input padding */
+  }
+
+  .room-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 10px; /* Adjust button padding */
+  }
+}
+
+/* Responsiveness for mobile phones and very small devices */
+@media (max-width: 480px) {
+  .room-form {
+    padding: 20px; /* Further reduce padding for compact devices */
+  }
+
+  .room-label {
+    font-size: 14px; /* Further reduce label font size */
+  }
+
+  .room-input {
+    padding: 6px; /* Minimize input padding */
+  }
+
+  .room-button {
+    font-size: 12px; /* Minimize button font size */
+    padding: 8px; /* Adjust button padding */
+  }
+}
